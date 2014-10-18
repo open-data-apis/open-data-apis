@@ -54,6 +54,22 @@ When the contents of tabular data files have been uploaded into the CKAN
 datastore they are available by the datastore API. The table names in the
 datastore are based on the resource id values.
 
+[The datastore API](http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api)
+allows the type to be set for each column, or data may be loaded
+automatically and the types will be guessed.
+
+Datastore Column Type | Description
+--- | ---
+text | unicode string
+json | JSON data
+date | YYYY-MM-DD
+time | HH:MM:SS
+timestamp | ISO 8601 format date
+int | integer
+float | IEEE 754 floating point
+bool | 'true' or 'false'
+
+These types are based on [PostgreSQL data types](http://www.postgresql.org/docs/9.3/static/datatype.html)
 
 ## Established Mappings
 
